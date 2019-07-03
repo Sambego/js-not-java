@@ -17,7 +17,7 @@ body {
     grid-template-areas: "header" "sub" "js" "jscode" "java" "javacode" "footnotes" "footer";
     width: 100%;
     max-width: 1000px;
-    padding: 30px;
+    padding: 40px 40px 60px;
     margin: 0 auto;
 }
 
