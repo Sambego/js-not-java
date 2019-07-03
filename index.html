@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="JavaScript is not Java">
+    <meta property="og:site_name" content="JavaScript is not Java">
+    <meta property="og:url" content="https://javascript-is-not-java.com">
+    <meta property="og:description" content="JavaScript and Java are 2 different languages, just because you see one on somebody's LinkedIn, does not mean he knows the other.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="og.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism-okaidia.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Dear recruiter, <a href "https://en.wikipedia.org/wiki/JavaScript" title="Read more about JavaScript">JavaScript</a> is not <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" title="Read more about Java">Java</a>!</h1>
+        </header>
+
+        <section class="sub">
+            <p class="intro"><strong>JavaScript</strong> and <strong>Java</strong> are 2 different languages, just because you see one on somebody's LinkedIn, does not mean he knows the other.</p>
+            <p>Both have diferent usecases, one is mostly used on the web<span class="footnote">[1]</span>, while the other is mostly used to write native desktop and mobile sofware<span class="footnote">[2]</span>. </p>
+        </section>
+
+        <div class="js">
+            <h2>JavaScript</h2>
+            <p>JavaScript <span class="phonetic">(/ˈdʒɑːvəˌskrɪpt/)</span>, often abbreviated as JS, is a high-level, <strong>interpreted programming language</strong> that conforms to the <strong>ECMAScript specification</strong>.</p>
+            <p>JavaScript has curly-bracket syntax, <strong>dynamic typing</strong>, <strong>prototype-based object-orientation</strong>, and first-class functions.</p>
+            <p><strong>Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web</strong>. JavaScript enables interactive web pages and is an essential part of web applications.</p>
+            <p>The vast majority of websites use it, and major web browsers have a dedicated JavaScript engine to execute it.</p>
+            <p><a href="https://en.wikipedia.org/wiki/JavaScript" title="Read more about JavaScript">Read more</a></p>
+        </div>
+        <div class="java">
+            <h2>Java</h2>
+            <p>Java <span class="phonetic">(/ˈdʒɑːvə/)</span> is a <strong>general-purpose programming language that is class-based</strong>, object-oriented, and designed to have as few implementation dependencies as possible. </p>
+            <p>It is intended to let application developers <strong>write once, run anywhere</strong> (WORA), meaning that <strong>compiled</strong> Java code can run on all platforms that support Java without the need for recompilation. </p>
+            <p>Java applications are typically <strong>compiled to bytecode</strong> that can run on any <strong>Java virtual machine</strong> (JVM) regardless of the underlying computer architecture. </p>
+            <p>The syntax of Java is similar to C and C++, but it has fewer low-level facilities than either of them. </p>
+            <p><a href="https://en.wikipedia.org/wiki/Java_(programming_language)" title="Read more about Java">Read more</a></p>
+        </div>
+
+        <div class="js-code">
+            <pre><code class="language-javascript">function helloWorld() {
+    console.log("Hello world")
+};</code></pre>
+        </div>
+
+        <div class="java-code">
+            <pre><code class="language-java">public class HelloWorld {
+    public static void main(String args[]) {
+        System.out.println("Hello, World");
+    }
+}</code></pre>
+        </div>
+
+        <section class="footnotes">
+            <ol>
+                <li>JavaScript can be used in a lot of other use cases, but it's main purpose is on the web.</li>
+                <li>Java has some history on the web (JSP anyone?), but it's main focus is to run in a JVM.</li>
+            </ol>
+        </section>
+
+        <footer class="footer">
+            <p>This information has been brought to you with ♥ by <a href="https://twitter.com/sambego" title="Visit my Twitter profile">@sambego</a>.</p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-java.min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

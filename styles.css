@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 20px;
+    grid-template-rows: auto;
+    grid-template-areas: "header header" "sub sub" "js java" "jscode javacode" "footnotes footnotes" "footer footer";
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px 30px;
+    margin: 0 auto;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sub {
+    grid-area: sub;
+}
+
+.js {
+    grid-area: js;
+}
+
+.java {
+    grid-area: java;
+}
+
+.js-code {
+    grid-area: jscode;
+}
+
+.java-code {
+    grid-area: javacode;
+}
+
+.js-code,
+.java-code {
+    margin: 20px 0;
+}
+
+.footnotes {
+    grid-area: footnotes;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.footnotes li {
+    opacity: .6;
+    font-size: 15px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.footer p {
+    font-size: 15px;
+}
+
+h1 {
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a {
+    transition: padding .2s ease-in-out;
+    padding: 0 0 10px;
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    padding: 0 0 7px;
+}
+
+p {
+    font-size: 20px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.intro {
+    font-size: 25px;
+}
+
+.phonetic {
+    opacity: .6;
+    font-style: italic;
+}
+
+.footnote {
+    opacity: .6;
+    vertical-align: super;
+    font-size: 12px;
+}
+
+@media (min-width: 640px) {
+    h1 {
+        font-size: 40px;
+    }
+}
