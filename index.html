@@ -79,26 +79,31 @@
         </section>
 
         <footer class="footer">
-            <p>This information has been brought to you with ♥ by <a href="https://twitter.com/sambego" title="Visit my Twitter profile">@sambego</a>.</p>
+            <p>This information has been brought to you with ♥ by <a href="https://twitter.com/sambego" title="Visit my Twitter profile"><strong>@sambego</strong></a>.</p>
         </footer>
 
+        <div class="cookie-consent">
+            This page uses cookies, which page doesn't these days?
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-javascript.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-java.min.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143270203-1"></script>
     <script>
-        window.ga = function() {
-            ga.q.push(arguments)
-        };
-        ga.q = [];
-        ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto');
-        ga('set', 'transport', 'beacon');
-        ga('send', 'pageview')
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143270203-1');
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
+
 </body>
 
 </html>
